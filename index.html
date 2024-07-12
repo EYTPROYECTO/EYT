@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E&T | PROYECTOS DE INGENIERÍA Y TECNOLOGIA E.I.R.L.</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-Ps2sCtcMYH3B7yMZ7f8OwKd4BBrzL8MEcC2Zef9rB1d1yDfB6tS/16YXnIr5f5/dKM3d3nwlI+qY2Z39a8Zd+w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="icon" href="images/ico.ico">
+</head>
+<body>
+
+            <!-- Contenido izquierdo -->
+            <div class="header-content">
+                <div class="left-content">
+                  <h1><span class="letter-e">SOPORTE TÉCNICO</span></h1>
+                  <p >
+                    Somos una empresa peruana dedicada a brindar soluciones tecnológicas en equipos de cómputo, así como instalaciones de redes y venta de portátiles.
+                  </p>
+                  <a href="https://api.whatsapp.com/send?phone=51936004651" class="btn-whatsapp" style="background-color: #25d366; color: #000000; padding: 15px 25px; border-radius: 5px; text-decoration: none; display: flex; align-items: center;" target="_blank">
+                    <span style="margin-right: 3px; font-size: 14px;">¡Contáctenos por WhatsApp!</span>
+                    <i class="icon-whatsapp" style="font-size: 18px;"></i>
+                  </a>
+                </div>
+              </div><!-- End header-content container -->
+            </header>
+    
+            <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="https://api.whatsapp.com/send?phone=51938751092" style="margin-right: 50px">
+                    <img src="images/logo.png" alt="Logo de E&amp;T" style="width: auto; max-height: 60px;">
+                  </a>
+                  <!-- Mueve el botón del menú fuera del div container-fluid -->
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-list2"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#servicios">Servicios</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#productos">Productos</a>
+                      </li>
+                    </ul>                
+                  </div>
+                </div>
+              </nav>
+            
+
+      <style>
+        html, body {
+    max-width: 100%;
+    overflow-x: hidden; /* Esto previene el desplazamiento horizontal */
+}
+
+
+.container {
+    width: 90%; /* En lugar de un ancho fijo en píxeles */
+    margin: 0 auto; /* Centra el contenedor */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.section-content {
+    animation: fadeIn 1s ease-in;
+}
+
+
+            
+        .col-md-4 {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container-fluid {
+    background-color: #f8f9fa;
+    padding: 0.2%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.navbar-nav {
+    margin-left: 5; /* Alinear a la izquierda */
+    margin-right: 20px; /* Mantener el margen derecho */
+    font-size: 19px;
+    padding: 31px;
+}
+
+.navbar .container-fluid {
+    display: flex;
+    align-items: center; /* Alinear verticalmente los elementos */
+}
+
+.navbar-brand {
+    margin-right: 50px;
+    padding: 10px;
+}
+
+.navbar-collapse {
+    display: flex;
+    justify-content: flex-start; /* Alinear elementos a la izquierda */
+    flex-grow: 1; /* Hacer que ocupe todo el espacio disponible */
+}
+    
+.coffe-1 {
+    position: relative;
+    width: 300px;  /* Ajusta el ancho según sea necesario */
+    height: 350px;  /* Ajusta la altura según sea necesario */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.coffe-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.coffe-1 .text-overlay {
+    position: absolute;
+    bottom: 10px;  /* Ajusta la posición del texto según sea necesario */
+    left: 10px;  /* Ajusta la posición del texto según sea necesario */
+    right: 10px;  /* Ajusta la posición del texto según sea necesario */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.coffe-1:hover {
+    transform: scale(1.05);
+}
+
+.overlay-button {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con transparencia */
+    color: #000000; /* Texto blanco */
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    border: 2px solid #f87015; /* Ancho de 2px y color rojo (#ff0000) */
+}
+
+.overlay-button:hover {
+    transform: scale(1.05);
+    background-color: #f87015;
+    border-color: #f87015;
+    text-shadow: none;
+    color: #ffffff; /* Color del texto al pasar el mouse */
+}
+
+.overlay-button:active {
+    transform: scale(1);
+}
+
+        .coffe-content h2 {
+            margin-top: 20px;
+            border-bottom: 100px solid transparent; /* Borde inferior transparente */
+        }
+.container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; /* Distribuye los elementos uniformemente en el contenedor */
+    }
+        .row {
+        flex-basis: calc(33.33% - 10px); /* El 33.33% es para que haya tres servicios en una fila y el -10px es para el espacio entre ellos */
+        margin-bottom: 20px; /* Espacio entre las filas */
+    }
+
+
+        .text {
+            font-size: 24px; /* Tamaño inicial del texto */
+        }
+        .services-content {
+           text-align: center;
+           color: white; /* Color del texto dentro del contenedor */
+        }
+
+        .services-content h2 {
+           color: white; /* Color específico para el texto "PRODUCTOS" */
+           margin-left: 39%; /* Ajusta este valor según tus necesidades */
+        }
+
+        .services-group {
+           display: flex;
+           justify-content: center;
+           gap: 20px; /* Espacio entre los cuadros */
+           flex-wrap: wrap; /* Permite que los cuadros se envuelvan si la pantalla es pequeña */
+           margin-left: 50px;
+        }
+
+        .services-1 {
+           width: 260px; /* Ancho fijo para cada cuadro */
+           height: 430px; /* Alto fijo para cada cuadro */
+           transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+           text-align: center;
+           padding: 20px;
+           background-color: #f0f0f0; /* Color de fondo inicial */
+           border-radius: 20px; /* Bordes redondeados */
+           display: flex;
+           flex-direction: column;
+           justify-content: space-between; /* Para alinear los elementos dentro del cuadro */
+           align-items: center; /* Para centrar verticalmente los elementos */
+        }
+
+        .services-1 img {
+           width: 100%;
+           height: auto; /* Mantener la proporción de la imagen */
+           border-radius: 5px; /* Bordes redondeados de la imagen */
+           max-height: 200px; /* Limitar la altura máxima de la imagen */
+           transition: none; /* Desactivar la transición para la imagen */
+           margin-top: 60px; /* Agrega un margen superior para mover la imagen hacia abajo */
+        }
+
+        .services1 {
+           bottom: 1%;
+           font-size: 16px;
+           margin-top: auto;
+           margin-bottom: 20px;
+           margin-left: auto;
+           margin-right: auto;
+           transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Agregado background-color a la transición */
+           display: block;
+           width: 100%;
+           padding: 10px;
+           background-color: transparent;
+           border: 2px solid #f87015;
+           color: #333;
+           border-radius: 5px;
+           cursor: pointer;
+        }
+
+        .services-1:hover .services1 {
+           transform: scale(1.1);
+           background-color: #f87015; /* Cambiado a color naranja */
+           color: #fff; /* Cambiar el color del texto dentro del botón a blanco para mejor contraste */
+           border-radius: 5px; /* Redondea las esquinas del botón */
+        }
+
+        .services-1:hover {
+           transform: scale(1.1);
+           background-color: rgba(0, 191, 255, 0.356);
+        }
+
+        /* Animación de pulse */
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        /* Animación de zoom alejándose y acercándose */
+        @keyframes zoomInOut {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .services-1 {
+            /* Resto de estilos */
+            position: relative; /* Añadimos esta propiedad para posicionar el elemento de manera relativa */
+            overflow: hidden; /* Ocultamos el exceso del borde animado */
+        }
+
+        .services-1::before {
+            content: ''; /* Necesario para crear el elemento pseudo ::before */
+            position: absolute; /* Posicionamos el elemento de manera absoluta */
+            top: 0; /* Lo colocamos en la parte superior */
+            left: 0; /* Lo colocamos en la parte izquierda */
+            width: 100%; /* Ancho del elemento igual al cuadro */
+            height: 100%; /* Alto del elemento igual al cuadro */
+            box-sizing: border-box; /* Incluimos el borde en el tamaño total del elemento */
+            border: 2px solid transparent; /* Establecemos un borde transparente */
+            z-index: -1; /* Lo enviamos detrás del contenido del cuadro */
+            transition: border-color 0.3s; /* Transición para cambiar el color del borde */
+            margin-right: 20px;
+        }
+        .services1:hover {
+           animation: pulse 0.6s ease-in-out infinite, jiggle 0.6s ease-in-out infinite, zoomInOut 1.5s ease-in-out infinite;
+        }
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer ul li a:hover {
+    color: #3498db;
+}
+
+.footer .newsletter {
+    flex: 2 1 300px;
+    margin: 20px;
+}
+
+.footer .newsletter p {
+    margin-bottom: 20px;
+}
+
+.footer .newsletter form {
+    display: flex;
+}
+
+.footer .newsletter input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.footer .newsletter button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.footer .newsletter button:hover {
+    background-color: #2980b9;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #7f8c8d;
+    margin-top: 40px;
+}
+
+.footer-bottom p{
+    color: #ecf0f1;
+}
+
+@media (max-width: 767px) {
+
+.left-content p {
+ padding-left: 60px; /* Espacio a la izquierda */
+ padding-right: 60px; /* Espacio a la derecha */
+}
+
+ .navbar-collapse {
+margin-right: 40%;
+text-align:center;
+}
+ .navbar-toggler {
+     display: block; /* Muestra el botón de alternar la barra de navegación */
+ }
+ .navbar-nav {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin: 0;
+     padding: 0;
+ }
+ .nav-item {
+     margin: 10px 0;
+ }
+ .header-content {
+     text-align: center;
+ }
+ .service-item {
+        width: 270px; /* Puedes ajustar este valor según lo necesites */
+        margin-bottom: 50px;
+        transition: transform 0.2s ease;
+    }
+    .service-item img {
+        width: 210px;
+    }
+ .rating {
+    font-size: 14px;
+ }
+ .service-name {
+    font-size: 18px;
+    margin-left: 25px;
+ }
+ .service-desc p {
+   font-size: 11px;
+ }
+ .indented {
+    font-size: 11px;
+ }
+ .price {
+    font-size: 22px;
+ }
+    
+ .services-content h2 {
+           margin-left: 40%; /* Ajusta este valor según tus necesidades */
+        }
+ .services-1 {
+    width: 65%; /* Más delgado aún */
+    margin: 10px auto; /* Centra los elementos de producto */
+    padding-left: 10px;  /* Espacio a la izquierda */
+    padding-right: 10px; /* Espacio a la derecha */
+}
+.services1 {
+    width: 100%; /* Para que ocupe todo el ancho del contenedor padre */
+    padding: 1.5px 20px; /* Padding superior/inferior de 3px y lateral de 10px */
+    box-sizing: border-box; /* Para incluir el padding en el ancho total */
+    margin-left: 0.8px;
+}
+.general-1 {
+     text-align: center; /* Alinea el contenido general al centro */
+     width: 90%;        /* Establece el ancho de la caja */
+     height: 5%;
+     padding: 58px;
+ }
+ .general-1 img {
+    position: relative;
+    top: 130px; /* Ajusta este valor para controlar la cantidad que deseas mover la caja hacia abajo */
+}
+ .btn-1 {
+    font-size: 13.5px; /* Tamaño del texto */
+    padding: 4px 9px; /* Padding alrededor del texto */
+ }
+ .general-1 h2{ 
+    font-size: 18px; /* Tamaño de la fuente del título */
+    width: 100%;
+ }
+
+
+ .coffe-1 {
+    width: 30vh;
+    padding-left: 0;  /* Espacio a la izquierda */
+    padding-right: 0; /* Espacio a la derecha */
+    padding-top: 5%;
+    margin-right: 7vh;
+    text-align: center;
+}
+.service-item{
+    margin-left: -10%; /* Mueve el texto hacia la izquierda */
+    padding-right: 5px; /* Ajustar el espacio a la derecha */
+}
+.coffe-content h2 {
+    padding-left: -20%; /* Mueve el texto hacia la izquierda */
+    text-align: center; /* Centra el texto dentro del contenedor */
+}
+.row {
+    margin-left: 50px;  /* Mueve el contenedor hacia la derecha */
+    margin-right: auto; /* Asegura que el margen derecho no interfiera */
+}
+.coffe-content {
+    padding-left: 5px;  /* Ajustar el espacio a la izquierda */
+    padding-right: 5px; /* Ajustar el espacio a la derecha */
+}
+.custom-container {
+    padding-left: 5px;  /* Ajustar el espacio a la izquierda */
+    padding-right: 5px; /* Ajustar el espacio a la derecha */
+}
+}
+@media(max-width: 982px) {
+    .navbar-collapse {
+margin-right: 40%;
+text-align:center;
+}
+ .navbar-toggler {
+     display: block; /* Muestra el botón de alternar la barra de navegación */
+ }
+ .navbar-nav {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin: 0;
+     padding: 0;
+ }
+    .coffe-1 {
+        width: 30vh;
+    padding-top: 5%;
+    margin-right: 7vh;
+    text-align: center;
+    }
+    .coffe-1 img {
+    width: 150%; /* La imagen ocupará todo el ancho del contenedor */
+    transform: scaleY(1.1); /* Escalar verticalmente la imagen en 1.5 veces */
+    border-radius: 15px; /* Borde redondeado igual que el contenedor */
+}
+    .services-content h2 {
+           margin-left: 25%; /* Ajusta este valor según tus necesidades */
+        }
+ .services-1 {
+        width: 65%; /* Puedes ajustar este valor según tus necesidades */
+        margin: 0 auto; /* Esto centra la caja horizontalmente */
+    }
+    .services1 {
+    width: 90%; /* Reduce el ancho del elemento al 50% de su contenedor padre */
+}
+ .footer .left p {
+    margin-left: 17px;
+    font-size: 11px;
+ }
+ .footer img {
+    height: 90px; /* Ajusta el tamaño según sea necesario */
+ }
+ .footer .right a {
+    margin-left: 10px;
+ } 
+}
+
+    </style>                
+
+<div class="coffe-content custom-container section-content" id="servicios">
+    <h2>NUESTROS SERVICIOS</h2>
+    <div class="product-carousel">
+        <div class="product-item">
+            <img src="images/FONDO_1.jpeg" alt="MANTENIMIENTO Y SOPORTE" style="padding: 50px; border-radius: 5px;">
+            <div class="text-overlay">
+                <button class="overlay-button" onclick="redirectToGeneral(0)">SOPORTE TÉCNICO</button>
+            </div>
+        </div>
+        <div class="product-item">
+            <img src="images/img3.jpg" alt="PRODUCTOS Y LICENCIAS" style="padding: 50px;">
+            <div class="text-overlay">
+                <button class="overlay-button" onclick="redirectToGeneral(1)">PRODUCTOS Y LICENCIAS</button>
+            </div>
+        </div>
+        <div class="product-item">
+            <img src="images/desarrollo web.png" alt="DESARROLLO WEB" style="padding: 50px;">
+            <div class="text-overlay">
+                <button class="overlay-button" onclick="redirectToGeneral(2)">DESARROLLO WEB</button>
+            </div>
+        </div>
+        <div class="product-item">
+            <img src="images/FONDO_4.jpeg" alt="INSTALACIÓN DE CAMARAS DE SEGURIDAD" style="padding: 50px;">
+            <div class="text-overlay">
+                <button class="overlay-button" onclick="redirectToGeneral(3)">INSTALACIÓN DE CAMARAS DE SEGURIDAD</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<main class="services">
+    <div class="services-content container section-content" id="productos">
+        <h2>PRODUCTOS</h2>
+        <div class="services-group">
+            <li class="service-item" style="margin-left: -0.5%;">
+                <img src="images/PRODUCTO_1_1-removebg-preview.png" style="padding: 20px;">
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    4.2 (657)
+                </div>
+                <div class="service-name">CPU CORE | I3 2DA GEN.</div>
+                <div class="service-desc">
+                    <p style="margin-left: 30px;">MEMORIA: 8GB DDR3</p>
+                    <p style="margin-left: 60px;">SSD: 240GB KINGSTON (Nuevo)</p> 
+                    <P style="margin-left: 47px;">VIDEO: INTEL HD GRAPHICS</P>    
+                    <P style="margin-left: 25px;">PUERTOS: PUERTO VGA / DISPLAYPORT</P>    
+                        <span class="indented">ALTAVOZ INCORPORADO</span>
+                        <span class="indented">ENTRADA PARA AURICULARES</span>
+                        <span class="indented">MICROFONO</span>
+                        <span class="indented">PUERTO RJ-45 ETHERNET</span>
+                        <span class="indented">PUERTOS USB</span>      
+                </div>
+                <div class="price">S/ 429.00</div>
+                <div class="service-item-tabbar">
+                    <div class="service-item-tabbar-right">
+                            <input type="hidden" name="product" value="9524">
+                            <input type="hidden" name="uenc" value="aHR0cHM6Ly93d3cuaHAuY29tL3BlLWVzL3Nob3AvY2hlY2tvdXQvY2FydC9hZGQvdWVuYy9hSFIwY0hNNkx5OTNkM2N1YUhBdVkyOXRMM0JsTFdWekwzTm9iM0F2YUhBdGFXNTBaV3d-L3Byb2R1Y3QvOTUyNC8~">
+                            <input name="form_key" type="hidden" value="vmTKFXN4YZvs3URs">
+                            <a href="https://wa.me/1234567890" class="button-whatsapp">Solicitar articulo</a>
+                            <style>
+                                .services1:hover {
+                                    background-color: #f87015;
+                                    animation: pulse 0.6s ease-in-out infinite, jiggle 0.6s ease-in-out infinite, zoomInOut 1.5s ease-in-out infinite;
+                                    color: #ffffff;
+                                }
+                            </style>
+                        </div>
+                </div>
+            </li>
+            <li class="service-item">
+                <img src="images/PRODUCTO_2_2-removebg-preview.png" style="width: 54.1%;">
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    4.2 (657)
+                </div>
+                <div class="service-name">CPU CORE | I5 4TA GEN.</div>
+                <div class="service-desc">
+                    <p style="margin-left: 30px;">MEMORIA: 8GB DDR3</p>
+                    <p style="margin-left: 60px;">SSD: 240GB KINGSTON (Nuevo)</p> 
+                    <P style="margin-left: 47px;">VIDEO: INTEL HD GRAPHICS</P>    
+                    <P style="margin-left: 25px;">PUERTOS: PUERTO VGA / DISPLAYPORT</P>    
+                        <span class="indented">ALTAVOZ INCORPORADO</span>
+                        <span class="indented">ENTRADA PARA AURICULARES</span>
+                        <span class="indented">MICROFONO</span>
+                        <span class="indented">PUERTO RJ-45 ETHERNET</span>
+                        <span class="indented">PUERTOS USB</span>      
+                </div>
+                <div class="price">S/ 549.00</div>
+                <div class="service-item-tabbar">
+                    <div class="service-item-tabbar-right">
+                            <input type="hidden" name="product" value="9524">
+                            <input type="hidden" name="uenc" value="aHR0cHM6Ly93d3cuaHAuY29tL3BlLWVzL3Nob3AvY2hlY2tvdXQvY2FydC9hZGQvdWVuYy9hSFIwY0hNNkx5OTNkM2N1YUhBdVkyOXRMM0JsTFdWekwzTm9iM0F2YUhBdGFXNTBaV3d-L3Byb2R1Y3QvOTUyNC8~">
+                            <input name="form_key" type="hidden" value="vmTKFXN4YZvs3URs">
+                            <button class="services1" onclick="openInNewTab('index3.html')">Solicitar articulo</button>
+                            <style>
+                                .services1:hover {
+                                    background-color: #f87015;
+                                    animation: pulse 0.6s ease-in-out infinite, jiggle 0.6s ease-in-out infinite, zoomInOut 1.5s ease-in-out infinite;
+                                    color: #ffffff;
+                                }
+                            </style>
+                        </div>
+                </div>
+            </li>
+            <li class="service-item">
+                <img src="images/PRODUCTO_3_1-removebg-preview.png" style="padding: 20px;">
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    4.2 (657)
+                </div>
+                <div class="service-name">CPU CORE | I7 6TA GEN.</div>
+                <div class="service-desc">
+                    <p style="margin-left: 30px;">MEMORIA: 8GB</p>
+                    <p style="margin-left: 60px;">SSD: 240GB KINGSTON (Nuevo)</p> 
+                    <P style="margin-left: 47px;">VIDEO: INTEL HD GRAPHICS</P>    
+                    <P style="margin-left: 25px;">PUERTOS: PUERTO VGA / DISPLAYPORT</P>    
+                        <span class="indented">ALTAVOZ INCORPORADO</span>
+                        <span class="indented">ENTRADA PARA AURICULARES</span>
+                        <span class="indented">MICROFONO</span>
+                        <span class="indented">PUERTO RJ-45 ETHERNET</span>
+                        <span class="indented">PUERTOS USB</span>      
+                </div>
+                <div class="price">S/ 759.00</div>
+                <div class="service-item-tabbar">
+                    <div class="service-item-tabbar-right">
+                            <input type="hidden" name="product" value="9524">
+                            <input type="hidden" name="uenc" value="aHR0cHM6Ly93d3cuaHAuY29tL3BlLWVzL3Nob3AvY2hlY2tvdXQvY2FydC9hZGQvdWVuYy9hSFIwY0hNNkx5OTNkM2N1YUhBdVkyOXRMM0JsTFdWekwzTm9iM0F2YUhBdGFXNTBaV3d-L3Byb2R1Y3QvOTUyNC8~">
+                            <input name="form_key" type="hidden" value="vmTKFXN4YZvs3URs">
+                            <button class="services1" onclick="openInNewTab('index4.html')">Solicitar articulo</button>
+                            <style>
+                                .services1:hover {
+                                    background-color: #f87015;
+                                    animation: pulse 0.6s ease-in-out infinite, jiggle 0.6s ease-in-out infinite, zoomInOut 1.5s ease-in-out infinite;
+                                    color: #ffffff;
+                                }
+                            </style>
+                        </div>
+                </div>
+            </li>
+        </div>
+    </div>
+</main>
+
+
+
+ 
+    <section class="general" id="general1">
+        <div class="general-1">
+            <h2>SOPORTE TÉCNICO</h2>
+            <img src="images/fondo3.jpg" alt="MANTENIMIENTO">
+            <p>
+                Nuestro servicio de mantenimiento comprende el desmontaje completo<br>del o los equipos para la adecuada limpieza de las partes metálicas,<br>ventiladores y placa de circuito. Así como, el cambio de pasta y/o pads térmicos.
+            </p>
+            <a href="#servicios" class="btn-1">Volver</a>
+        </div>
+        <div class="general-2"></div>
+    </section>    
+
+    <section class="general" id="general2">
+        <div class="general-3"></div>
+        <div class="general-1" >
+            <h2>PRODUCTOS Y LICENCIAS</h2>
+            <img src="images/img3.jpg" alt="RECONSTRUCCIÓN" style="margin-top: -12%;">
+            <p>
+                Este servicio comprende la reconstrucción de la estructura interna del case de la laptop para su adecuada movilidad en el uso.
+            </p>
+            <a href="#servicios" style="margin-top: -1%;" class="btn-1" >Volver</a>
+        </div>
+    </section>
+
+    <section class="general" id="general3">
+        <div class="general-1">
+            <h2>DESARROLLO WEB</h2>
+            <img src="images/desarrollo web.png" alt="REPOTENCIAMIENTO">
+            <p>
+                Brindamos las mejoras y actualizaciones más recomendables, tanto de hardware como de software, requeridas de acuerdo a las características de equipo a repotenciar.
+            </p>
+            <a href="#servicios" class="btn-1">Volver</a>
+        </div>
+        <div class="general-4"></div>
+    </section>  
+
+
+    <section class="general" id="general4">
+        <div class="general-5"></div>
+        <div class="general-1">
+            <h2>INSTALACIÓN DE CAMARAS DE SEGURIDAD</h2>
+            <img src="images/FONDO_4.jpeg" alt="LICENCIAS">
+            <p>
+                Nos dedicamos a la venta de licencias originales de windows, office y antivirus. Garantizando el buen funcionamiento y seguridad del computador.
+            </p>
+            <a href="#servicios" class="btn-1">Volver</a>
+        </div>
+    </section>
+
+    <div class="footer">
+        <div class="left">
+            <img src="images/logo-nuevo.png" alt="Logo E&T">
+            <p>©E&T | PROYECTOS DE INGENIERÍA Y TECNOLOGIA E.I.R.L. – 2024. Todos los derechos reservados</p>
+        </div>
+        <div class="right">
+            <a href="#">Términos y Condiciones</a>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.product-carousel').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                dots: true,
+                arrows: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+</body>
+</html>

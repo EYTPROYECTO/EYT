@@ -1,0 +1,755 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.navbar ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 20px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: -4%;
+}
+
+
+.left-content {
+    min-height: 100vh;
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center;
+    flex-direction: column; /* Apila los elementos uno encima del otro */
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+    ), url(images/P01.jpg);
+    background-position: center bottom; /* Centra la imagen de fondo */
+    background-repeat: no-repeat;
+    background-size: cover; /* Hace que la imagen de fondo cubra todo el contenedor */
+    padding: 0;
+    margin: 0 auto;
+    color: #ffffff;
+    text-align: center; /* Alinea el texto al centro */
+}
+
+.left-content {
+    margin-top: -22%; /* Ajusta el margen superior para el contenido */
+}
+
+.left-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    margin-top: 30%;
+}
+
+.left-content p {
+    font-size: 20px;
+    margin-top: -20px;
+    text-align: center;
+    padding-left: 20px;  /* Espacio a la izquierda */
+    padding-right: 20px; /* Espacio a la derecha */
+}
+
+    .btn-whatsapp {
+      background-color: #25d366;
+      color: #ffffff;
+      padding: 15px 25px;
+      border-radius: 5px;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+    .btn-whatsapp:hover {
+      background-color: #71db9a;
+      transform: scale(1.05);
+    }
+
+
+.logo {
+    color: #fffdfc;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.letter-e,
+.letter-t {
+    color: #ffffff;
+    font-size: 50%;
+    font-family: "Aldrich", sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.ampersand {
+    color: #ffffff;
+    font-size: 75%;
+    font-family: "Cabin", sans-serif;
+}
+
+.letter-e,
+.letter-t,
+.ampersand {
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+}
+
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li:first-child {
+    margin-left: 0;
+}
+
+.navbar ul li a {
+    color: #000000;
+}
+
+.navbar ul li a:hover {
+    color: #ff5e00;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+
+.header-content {
+    margin-left: 0; /* Eliminamos el margen izquierdo */
+    text-align: center; /* Alinear el texto al centro */
+    padding-left: 0; /* También eliminamos el padding izquierdo si no es necesario */
+}
+
+.header-content h1 {
+    font-size: 80px;
+    line-height: 50px;
+    color: #f9fafc;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+}
+
+.header-content p {
+    font-size: 20px;
+    color: #c5c5c5;
+    margin-bottom: 45px;
+}
+
+
+.icon-new-tab {
+    margin-left: 1px; /* Ajusta la cantidad de espacio entre el texto y el icono */
+    margin-top: -1px; /* Ajusta la posición vertical del icono */
+}
+
+.btn-1 {
+    display:inline-block;
+    padding: 11px 35px;
+    background-color: #ff3c00;
+    color: #f9fafc;
+    text-transform: uppercase;
+}
+
+.btn-1:hover {
+    background-color: #ff6919;
+}
+
+.coffe {
+    padding: 100px 0;
+    background-color: #e1e2e6;
+    position: relative;
+}
+
+
+
+
+
+.coffe-content {
+    text-align: center;
+    
+}
+
+.coffe-content h2 {
+    font-size: 55px;
+    line-height: 50px;
+    color: #323337;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: 20px; /* Ajusta este valor para mover el texto hacia abajo */
+    bottom: 30px;
+}
+
+
+
+
+
+.product-carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+.product-item {
+    flex: 0 0 auto;
+    margin: 0 5px; /* Reducir margen */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Reducir sombra */
+    position: relative;
+    scroll-snap-align: center;
+    padding: 4px; /* Reducido de 20px a 5px */
+    transition: transform 0.3s ease;
+    width: 150px; /* Reducir tamaño del item */
+}
+
+.product-item.slick-slide.slick-active {
+    width: 180px; /* Ajusta el ancho del contenedor */
+    height: 310px; /* Ajusta la altura del contenedor */
+}
+
+.product-item.slick-slide.slick-active img {
+    padding: 10px; /* Reducido el padding de la imagen */
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+.product-item .overlay-button {
+    font-size: 13px; /* Tamaño de la fuente reducido */
+    padding: 9px 15px; /* Espaciado interno (padding) reducido */
+    border: 1px solid #f7690b; /* Borde del botón */
+    background-color: #ffffff; /* Color de fondo */
+    color: #000; /* Color del texto */
+}
+
+
+.overlay-button:hover {
+    text-decoration: none;
+}
+.slick-prev.slick-arrow {
+    margin-left: 60px;
+    background-color: #3498db; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 50%; /* Rounded corners */
+    width: 40px; /* Width of the button */
+    height: 40px; /* Height of the button */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition for hover effect */
+}
+
+.slick-prev.slick-arrow:hover {
+    background-color: #2980b9; /* Background color on hover */
+}
+
+.slick-prev.slick-arrow:before {
+    content: '◀'; /* Utiliza un carácter para la flecha */
+    font-size: 20px; /* Tamaño de la flecha */
+    bottom: 12px; /* Ajusta la posición desde abajo según sea necesario */
+    position: absolute; /* Asegura que esté posicionado correctamente */
+}
+
+.slick-next.slick-arrow {
+    margin-right: 50px;
+    background-color: #3498db; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 50%; /* Rounded corners */
+    width: 40px; /* Width of the button */
+    height: 40px; /* Height of the button */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition for hover effect */
+}
+
+.slick-next.slick-arrow:hover {
+    background-color: #2980b9; /* Background color on hover */
+}
+
+.slick-next.slick-arrow:before {
+    content: '▶'; /* Use a character for the arrow */
+    font-size: 20px; /* Tamaño de la flecha */
+    bottom: 12px; /* Ajusta la posición desde abajo según sea necesario */
+    position: absolute; /* Asegura que esté posicionado correctamente */
+}
+
+/* Ajustes generales para el contenedor del carrusel */
+.slick-list.draggable {
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+/* Ajustes para la pista de elementos del carrusel */
+.slick-track {
+    display: flex;
+    align-items: center;
+    transition: transform 0.5s ease;
+}
+
+/* Ajustes generales para el contenedor del carrusel */
+.product-carousel.slick-initialized.slick-slider.slick-dotted {
+    position: relative;
+    margin: 0 auto;
+    margin-right: 10px;
+    padding: 0 40px;
+    padding-bottom: 30px;
+    overflow: hidden; /* Asegura que no haya barras laterales */
+}
+
+/* Ajustes para los botones de navegación */
+.slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.slick-prev {
+    left: -30px;
+}
+
+.slick-next {
+    right: -20px;
+}
+
+.slick-arrow:hover {
+    background: #555;
+}
+
+/* Ajustes para la lista y la pista del carrusel */
+.slick-list.draggable {
+    overflow: hidden; /* Asegura que no haya barras laterales */
+    position: relative;
+}
+
+
+
+
+
+
+.custom-container {
+    padding: 1%;
+    margin: 5px;
+    width: 100%;
+    background-size: contain;
+}
+
+.secction-header {
+    margin-left: -80%; /* Ajusta el margen izquierdo del elemento */
+}
+
+.secction-header h2,
+.secction-header p {
+    color: #fff; /* Cambiar el color del texto a blanco */
+    text-align: center; /* Centrar el texto */
+    font-size: 35px; /* Ajustar el tamaño del texto */
+    margin-bottom: 20px; /* Ajusta el margen inferior para dejar más espacio */
+    text-shadow: 2px 2px 15px rgb(0, 0, 0); /* Agregar una silueta con sombra */
+    -webkit-text-stroke-width: 1.5px; /* Grosor del borde */
+    -webkit-text-stroke-color: #faf7f7; /* Color del borde */
+}
+
+.txt-p {
+    font-size: 16px;
+    color: #414247;
+    padding: 0 250px;
+    margin-bottom: 35px;
+}
+
+.coffe-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.coffe-1 img {
+    width: 200px;
+}
+
+.coffe-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.coffe-1 h3 {
+    color: #323337;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.services {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)),
+        url(images/FONDO_1.jpeg);
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-size: cover;
+    padding: 60px 0;
+}
+
+.service-item {
+    width: 280px;
+    border: 1px solid #ccc;
+    padding: 7px;
+    margin-left: 50px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Agregado background-color a la transición */
+}
+
+.service-item:hover {
+        transform: scale(1.1);
+        background-color: rgba(0, 191, 255, 0.356);
+}
+
+.service-item:hover .services1 {
+    color: #ffffff;
+    background-color: #ff6919;
+}
+
+.service-item:hover .service-desc p {
+    color: #ffffff;
+}
+.service-item:hover .service-name {
+    color: #ffffff;
+    font-weight: bold;
+}
+.service-item:hover .indented {
+    color: #ffffff;
+}
+.service-item:hover .button-whatsapp {
+    background-color: #ff6919;
+    color: #fff;
+    text-decoration: none;
+}
+.service-item:hover .price {
+    color: #ff0000;
+    font-weight: bold;
+} 
+
+.service-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+.service-item-tabbar {
+    display: flex;
+    justify-content: center;
+    margin-left: 7.5PX;
+}
+.rating {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #ff9900;
+    margin: 10px 0;
+    font-weight: bold;
+}
+.rating i {
+    margin-right: 2px;
+}
+.service-name {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 10px 0;
+    color: #000;
+    margin-left: 50px;
+}
+.service-desc p {
+    font-size: 12px;
+    line-height: 1.5;
+    margin: 10px 0;
+    font-weight: bold;
+    color: #000;
+}
+.indented {
+    margin-left: 85px;
+    display: block;
+    font-size: 12PX;
+    margin-top: 10px;
+    color: #000;
+    font-weight: bold;
+}
+.price {
+    font-size: 1.5em;
+    color: #b12704;
+    margin: 20px 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.action.tocart.primary {
+    background-color: #25D366;
+color: #000000;
+border: none;
+padding: 8px 15px;
+margin-left: -63px;
+font-size: 14px;
+border-radius: 4px;
+transition: background-color 0.3s;
+text-decoration: none;
+}
+.action.tocart.action.tocart.primary:hover {
+background-color: #1a9146;
+}
+
+.button-whatsapp {
+    bottom: 1%;
+    font-size: 16px;
+    margin-top: auto;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Agregado background-color a la transición */
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    border: 2px solid #f87015;
+    color: #333;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-whatsapp:hover {
+    background-color: #f87015;
+    animation: pulse 0.6s ease-in-out infinite, jiggle 0.6s ease-in-out infinite, zoomInOut 1.5s ease-in-out infinite;
+    color: #ffffff;
+}
+
+.btn-whatsapp:hover .services1 {
+    transform: scale(1.1);
+    background-color: #f87015; /* Cambiado a color naranja */
+    color: #fff; /* Cambiar el color del texto dentro del botón a blanco para mejor contraste */
+    border-radius: 5px; /* Redondea las esquinas del botón */
+}
+
+.btn-whatsapp:hover .services1 {
+    color: #ffffff;
+    background-color: #ff6919;
+}
+
+    /* Estilos para el icono */
+    .fas.fa-star {
+        color: gold; /* Color inicial */
+        font-size: 24px; /* Tamaño inicial */
+        transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+        display: block;
+    }
+
+    /* Animación de brillo */
+    .fas.fa-star:hover {
+        color: yellow; /* Cambia el color al hacer hover */
+        transform: scale(1.2); /* Escala un poco al hacer hover */
+    }
+
+.general {
+    display: contents; /* Utilizar flexbox para centrar */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    opacity: 0; /* Inicialmente con opacidad 0 */
+    transition: opacity 0.5s ease; /* Agregar transición de opacidad */
+    text-align: center; /* Centrar el texto */
+    padding: 15px; /* Añadir un poco de espacio alrededor del contenido */
+}
+
+.general.active {
+    display: flex; /* Mostrar la sección activa con flexbox */
+    flex-direction: column; /* Mantener la dirección de los hijos en columna */
+    opacity: 1; /* Mostrar la sección con opacidad 1 */
+}
+
+.general img {
+    max-width: 50%;
+    height: auto;
+    margin-bottom: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.general-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 140px 60px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; /* Necesario para posicionar elementos absolutamente dentro de la caja */
+    margin-top: 50px;
+}
+.general-1 a {
+    /* Agrega los estilos que desees para la clase btn-1 */
+    background-color: #00ff37; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 10px 20px; /* Relleno */
+    border-radius: 5px; /* Radio de borde */
+    text-decoration: none; /* Quitar subrayado */
+    transition: background-color 0.3s, transform 0.3s;
+
+    /* Otros estilos... */
+}
+
+.general-1 a:hover {
+    background-color: #8eff8e; /* Cambio de color al pasar el mouse */
+    /* Otros estilos hover... */
+    transform: scale(1);
+
+}
+
+.general-1 h2 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 5px 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.general-1 .content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 60px 0 20px 0; /* Añadir margen superior para dejar espacio para el h2 */
+}
+
+.general-1 img {
+    max-width: 50%;
+    height: auto;
+    align-self: flex-start; /* Asegurar que la imagen se alinee al inicio del contenedor */
+}
+
+.general-1 p {
+    max-width: 42%;
+    font-size: 16px;
+    color: #666;
+    text-align: right; /* Alinear el texto a la derecha */
+    margin-left: auto;
+    margin-top: -28%;
+}
+
+
+.general-1 .btn-1 {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px; /* Ajustar solo el padding para el espacio interno del botón */
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+    width: auto; /* Opcional: permite que el botón se ajuste al contenido */
+}
+
+
+@keyframes zoomInDown {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+
+
+
+h2 {
+    font-size: 35px;
+    line-height: 70px;
+    color: #323337;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    color: #414247;
+    margin: 25px 0 45px 0;
+    margin-bottom: 20px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-top: 2px solid #e7e7e7;
+}
+.footer img {
+    height: 180px; /* Ajusta el tamaño según sea necesario */
+}
+.footer .left {
+    display: flex;
+    align-items: center;
+}
+.footer .left p {
+    margin-left: 20%;
+}
+.footer .right a {
+    color: #000;
+    text-decoration: none;
+    margin-left: 20px;
+}
